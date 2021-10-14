@@ -1,0 +1,40 @@
+.body{
+    background-color: #E5DCC3;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header{
+    text-align: center;
+    width: 1870px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0px;
+}
+
+h1{
+font-size: 40px;
+}
+
+.links{
+    font-size: 20px;
+    color:rgb(7, 84, 160);
+}
+
+.article{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+.list{
+    list-style-position: inside;
+    
+}
+
+img{
+    width: 600px;
+}
+
+
