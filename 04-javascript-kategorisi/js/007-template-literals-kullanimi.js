@@ -3,7 +3,7 @@
 
 let username = "hakan"
 const DOMAIN = "kodluyoruz.org"
-
+let yas = 25
 let email = username + "@" + DOMAIN
 
 // console.log("Merhaba", username, "sitemize hosgeldin", "mail adresin:", email)
@@ -17,6 +17,9 @@ borcunuz: ${(2 + 3) * 10} TL
 gunun saat bilgisi : ${new Date().getHours()}
 
 kisa isminiz: ${username[0]}.
+
+yas= ${yas}
+
 `
 
 console.log(info)
