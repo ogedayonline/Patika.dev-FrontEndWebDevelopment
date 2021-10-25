@@ -22,7 +22,7 @@ console.log(firstName)
 console.log(email.search("@"))
 console.log( email[15] )
 
-email.search('olmayan') // -1
+console.log(email.search('olmayan')) // -1
 
 // belli bir yere kadar al -> slice :  (domain bilgisi)
 let DOMAIN = email.slice( email.search("@") + 1)
@@ -37,8 +37,8 @@ email = email.replace('gmail.com', 'kodluyoruz.org')
 console.log(email)
 
 // istedigim bilgi var mi ? -> includes :
-email.includes('dkfhsd') // false
-email.includes('@') // true
+console.log(email.includes('dkfhsd')) // false
+console.log(email.includes('@')) // true
 
 // istedigim bilgiyle basladi mi ? bitti mi -> startsWidth, endsWidth :
 console.log(
@@ -49,3 +49,4 @@ console.log(
 firstName = "FIRST"
 lastName = "LAST"
 let fullName = `${firstName[0].toUpperCase()}${firstName.slice(1).toLowerCase()} ${lastName[0].toUpperCase()}${lastName.slice(1).toLowerCase()}`
+console.log(fullName)

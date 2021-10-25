@@ -17,4 +17,4 @@ console.log(document.baseURI)
 
 // document icerisinde style bilgilerini degistirmek:
 // css bilginizle birlikte style yapisi uzerinde duzenlemeler yapabilirsiniz..
-document.body.style.backgroundColor = "aqua"
+document.body.style.backgroundColor = "red"
