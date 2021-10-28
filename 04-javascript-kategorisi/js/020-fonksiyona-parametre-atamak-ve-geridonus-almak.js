@@ -23,6 +23,7 @@ function greetings2(firstName, lastName) {
     return info
 }
 
+
 let greetingsInfo = greetings2("Ad", "Soyad")
 // let info = "deneme" // ?????
 console.log(greetingsInfo)
@@ -32,8 +33,7 @@ function domIdWriteInfo(id, info) {
     domObject.innerHTML = info
 }
 
-let htmlInfo = `<span style="color:red">Color REDDDD</span>`
+let htmlInfo = `<span style="color:green">Color GREEN</span>`
 
 domIdWriteInfo('greeting', htmlInfo)
-domIdWriteInfo('info', greetings2("Lorem", "Ipsum") )
-
+domIdWriteInfo('info', greetings2("Lorem", "Ipsum"))
