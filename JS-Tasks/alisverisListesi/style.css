@@ -1,0 +1,18 @@
+.mother{
+    background-color: crimson;
+}
+.baslik{
+    padding: 0px 0px;
+    border: white solid 5px;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+li{
+    cursor: pointer;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+  }
