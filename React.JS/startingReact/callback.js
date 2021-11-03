@@ -15,6 +15,7 @@
 // });
 
 import fetch from "node-fetch";
+import axios from "axios";
 
 // fetch("https://jsonplaceholder.typicode.com/users")
 //   .then((data) => data.json())
@@ -30,21 +31,45 @@ import fetch from "node-fetch";
 //       });
 //   });
 
-async function getData() {
-  const users = await (
-    await fetch("https://jsonplaceholder.typicode.com/users")
-  ).json();
+// async function getData() {
+//   const { data: users } = await axios(
+//     "https://jsonplaceholder.typicode.com/users"
+//   );
 
-  const post1 = await (
-    await fetch("https://jsonplaceholder.typicode.com/posts/1")
-  ).json();
+//   const { data: post1 } = await axios(
+//     "https://jsonplaceholder.typicode.com/posts/1"
+//   );
 
-  const post2 = await (
-    await fetch("https://jsonplaceholder.typicode.com/posts/2")
-  ).json();
-  console.log("users", users);
-  console.log("post1", post1);
-  console.log("post2", post2);
-}
+//   const { data: post2 } = await axios(
+//     "https://jsonplaceholder.typicode.com/posts/2"
+//   );
 
-getData();
+//   console.log("users", users);
+//   console.log("post1", post1);
+//   console.log("post2", post2);
+// }
+
+// getData();
+
+const getUsers = () => {
+  return new Promise(async (resolve, reject) => {
+    const { data } = await axios("https://jsonplaceholder.typicode.com/users/");
+    resolve(data);
+  });
+};
+
+const getPost = (post_id) => {
+  return new Promise(async (resolve, reject) => {
+    const { data } = await axios(
+      "https://jsonplaceholder.typicode.com/posts/" + post_id
+    );
+    resolve(data);
+  });
+};
+
+(async () => {
+  const users = await getUsers();
+  const posts = await getPost(1);
+  console.log(users);
+  console.log(posts);
+})();
