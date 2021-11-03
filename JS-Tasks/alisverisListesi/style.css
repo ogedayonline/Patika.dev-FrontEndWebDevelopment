@@ -1,18 +1,46 @@
-.mother{
-    background-color: crimson;
-}
-.baslik{
-    padding: 0px 0px;
-    border: white solid 5px;
-    color: black;
-    font-weight: bold;
-    font-family: sans-serif;
+.baslik {
+  padding: 0px 0px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: rgb(110, 72, 11) 3px solid;
 }
 
-li{
-    cursor: pointer;
+.button {
+  background-color: black;
+  color: white;
+  width: 150px;
+}
+
+li {
+  margin-top: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: rgb(22, 3, 3);
+  border-bottom: 0.5px black solid;
 }
 
 ul li.checked {
-    text-decoration: line-through;
-  }
+  text-decoration: line-through;
+}
+
+#liste {
+  border: 1px black solid;
+  border-radius: 10px;
+  list-style-type: decimal;
+}
+
+.deleteButton {
+  float: right;
+  margin-right: 25px;
+  height: 30px;
+  width: 100px;
+  margin-top: 1px;
+  font-size: 15px;
+  border: none;
+  background-color: rgb(124, 15, 57);
+  color: white;
+  border-radius: 5px;
+}
+.deleteButton:hover {
+  background-color: rgb(65, 9, 75);
+}

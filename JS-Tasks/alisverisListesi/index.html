@@ -16,11 +16,11 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Alışveriş Listem!</title>
   </head>
 
   <body style="background-color: white">
-    <div class="container">
+    <div id="container" class="container">
       <div class="row">
         <div class="col-12">
           <h1 class="baslik text-center mt-5">Alışveriş Listem</h1>
@@ -38,7 +38,11 @@
             />
             <div class="input-group-append">
               <button
-                style="background-color: black; color: white; width: 150px"
+                style="
+                  background-color: rgb(110, 57, 57);
+                  color: white;
+                  width: 150px;
+                "
                 class="btn"
                 type="button"
                 id="button"
@@ -49,11 +53,21 @@
           </div>
         </div>
         <div class="col-12 listDiv">
-          <ul
-            class="mt-5"
-            style="list-style: upper-roman; font-size: 25px"
-            id="liste"
-          ></ul>
+          <ul class="" style="font-size: 25px" id="liste"></ul>
+        </div>
+        <div
+          style="position: absolute; top: 10px; right: 100px"
+          class="toast"
+          id="myToast"
+        >
+          <div class="toast-header">
+            <strong class="me-auto"
+              ><i class="bi-gift-fill"></i> Boş Ekleme Yapamazsınız!!!</strong
+            >
+          </div>
+          <div style="font-size: 20px" class="toast-body">
+            Lütfen Tekrar Yazın
+          </div>
         </div>
       </div>
     </div>
@@ -72,7 +86,6 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
